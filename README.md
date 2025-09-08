@@ -1,18 +1,36 @@
-## Getting Started
+## English
+Simple text editor written in Java with JavaFX.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Features
+- Create, save, and open `.txt` files
+- Minimalist interface
 
-## Folder Structure
+### To compile and run, change /path/to/javafx/lib to the path to your lib folder.
 
-The workspace contains two folders by default, where:
+## Compilation
+```bash
+javac --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -d bin src/com/notebook/*.java 
+```
+## Run
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```bash
+java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -cp bin com.notebook.Main
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Russian
+Простой текстовый редактор, написанный на Java с использованием JavaFX.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Возможности
+- Создание, сохранение и открытие файлов `.txt`
+- Минималистичный интерфейс
 
-## Dependency Management
+### Для компиляции и запуска измените /path/to/javafx/lib на путь к вашей папке lib.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Компиляция
+```bash
+javac --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -d bin src/com/notebook/*.java
+```
+## Запуск
+```bash
+java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -cp bin com.notebook.Main
+```
